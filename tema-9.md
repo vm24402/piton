@@ -74,7 +74,7 @@ class Gardener:
 
     def harvest(self):
         if self._plant.all_are_ripe():
-            print(f"{self.name} собрала урожай!")
+            print(f"{self.name} собрал урожай!")
             self._plant.give_away_all()
         else:
             print("Помидоры еще не дозрели. Подождите еще немного.")
@@ -85,7 +85,7 @@ if __name__ == "__main__":
     Gardener.knowledge_base()  # тест 1: справка по садоводству
 
     tomato_bush = TomatoBush(5)  # тест 2: создание объектов классов TomatoBush и Gardener
-    gardener = Gardener("Полина", tomato_bush)
+    gardener = Gardener("Влад", tomato_bush)
 
     for _ in range(3):  # тест 3: ухаживаем за растением несколько раз
         gardener.work()
